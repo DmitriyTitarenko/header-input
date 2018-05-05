@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    box-sizing: border-box;
+    font-size: .875rem;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: rgba(0,0,0,.87);
+    position: relative;
+}
+
+/* nav */
+
+.container{
+    text-transform: uppercase;
+    width: 500px;
+    margin: 0 auto;
+    position: absolute;
+    right: 20%;
+    top: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 400px;
+    letter-spacing: 1px;
+    line-height: 16px;
+}
+
+.nav__item{
+    border-top: 3px solid;
+    border-top-color: transparent;
+    transition: border-top-color .1s ease-in-out;
+}
+
+.nav__item:hover{
+    border-top-color:#00abeb;
+}
+
+.nav__item:first-child{
+    border-top-color: #00abeb;
+}
+
+a{
+    cursor: pointer;
+    color: black;    
+    display: block;
+    padding: 27px 0;
+    text-decoration: none;
+    
+}
+
+/* input */
+
+input {
+    cursor: text;
+    text-align: start;
+    letter-spacing: normal;
+    outline-color: initial;
+    outline-style: initial;
+    height: 40px;
+    width: 40px;
+    border-left-style: none;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    width: 360px;
+    line-height: 1,15;
+    margin: 0;    
+}
+
+
+input:focus {
+    border-bottom: 2px solid #00abeb;    
+}
+
+
+
+label:focus {
+    font-size: 10px;
+}
+
+label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    display: block;
+    transition: top .2s ease-in-out,
+                right .2s ease-in-out;
+}
+
+.form {
+    position: relative;
+}
